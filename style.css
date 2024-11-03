@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#fundo {
+    background-image: linear-gradient(#36454F, #fff599, #fff599, #36454F);
+    height: 99vh;
+    margin: 0;
+    padding: 0px;
+    color: #fff;
+}
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+
+#fundo>ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: 40vh;
+    font-size: x-large;
+}
+
+#Home {
+    font-size: xx-large;
+    color: lightgrey;
+}
+
+#pedra {
+    background-image: url(juliette-paez-tobar-YOqYqrQfjKM-unsplash.jpg);
+    height: 20px;
+    border-color: #DAA520;
+    border-width: 2px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+#pedra02 {
+    background-image: url(juliette-paez-tobar-YOqYqrQfjKM-unsplash.jpg);
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-color: #DAA520;
+    left: 0;
+}
+
+
+body {
+    border-left: solid #DAA520;
+    border-right: solid #DAA520;
+    border-bottom: solid #DAA520;
+    border-width: 2px;
+
+}
+
+#nome::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    border-left: outset 1px #daa520;
+    border-top: outset 1px #daa520;
+    left: 0;
+    transition: 0.5s;
+    top: 0;
+
+}
+
+#nome {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: 70vh;
+    align-items: center;
+    font-size: 60px;
+}
+
+#nome::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    border-right: outset 1px #daa520;
+    border-bottom: outset 1px #daa520;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+.gradient-border {
+    z-index: 99;
+
+
+}
+
+#nome:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+#nome:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+#mensagem {
+    position: absolute;
+    margin: 0;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 60;
+    font-style: 70vh;
+    align-items: center;
+    font-size: 4vh;
+}
+
+a {
+    color: lightgrey;
+}
+
+@media (max-width: 375px) {
+    header {
+        font-size: 16px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+}
+
+.glow-on-hover {
+    border-radius: 15px;
+
+    border: none;
+    outline: none;
+    color: #032026;
+    font-size: xx-large;
+    background: #fff599;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: 70vh;
+    padding: 0 1em 1em 1em
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #fff599, #36454F, #DAA520, #fff599);
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #34424c
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: 40vh;
+    font-size: x-large;
+}
+
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+a:hover {
+    color: #fdec6e;
+    text-shadow: 0px 0px 30px #fdec6e;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: hsl(0 0% 2%)
+}
+
+body::before {
+    --size: 120px;
+    --line: hsl(0 0% 100% / 0.13);
+    --thickness: 2px;
+    --offset: 60px;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(transparent 0 calc(var(--size) - var(--thickness)), var(--line) calc(var(--size) - var(--thickness)) var(--size)) var(--offset) var(--offset) / var(--size) var(--size),
+        linear-gradient(90deg, transparent 0 calc(var(--size) - var(--thickness)), var(--line) calc(var(--size) - var(--thickness)) var(--size)) var(--offset) var(--offset) / var(--size) var(--size);
+}
+
+#Home {
+    position: relative;
+}
+
+
+#Home::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    border-left: outset 1px #daa520;
+    border-top: outset 1px #daa520;
+    left: 0;
+    transition: 0.5s;
+    top: 0;
+
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    border-right: outset 1px #daa520;
+    border-bottom: outset 1px #daa520;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+#Home:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+#Home:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#Projects {
+    position: relative;
+}
+
+
+#Projects::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    border-left: outset 1px #daa520;
+    border-top: outset 1px #daa520;
+    left: 0;
+    transition: 0.5s;
+    top: 0;
+
+}
+
+#Projects::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    border-right: outset 1px #daa520;
+    border-bottom: outset 1px #daa520;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+#Projects:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+#Projects:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+#Skills {
+    position: relative;
+}
+
+
+#Skills::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    border-left: outset 1px #daa520;
+    border-top: outset 1px #daa520;
+    left: 0;
+    transition: 0.5s;
+    top: 0;
+
+}
+
+#Skills::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    border-right: outset 1px #daa520;
+    border-bottom: outset 1px #daa520;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+#Skills:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+#Skills:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+#Contact {
+    position: relative;
+}
+
+
+#Contact::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    border-left: outset 1px #daa520;
+    border-top: outset 1px #daa520;
+    left: 0;
+    transition: 0.5s;
+    top: 0;
+
+}
+
+#Contact::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    transition: 0.5s;
+    border-right: outset 1px #daa520;
+    border-bottom: outset 1px #daa520;
+    right: 0;
+    bottom: 0;
+
+
+
+}
+
+#Contact:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+#Contact:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-border {
+    position: static;
+    z-index: 99;
+}
+
+footer {
+    background-color: #36454F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 100px;
+    right: 0;
+    left: 50%;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+    font-style: italic;
+}
+
+ul{
+font-size: medium;
+align-items: center;
+}
+
+
